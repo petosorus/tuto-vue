@@ -47,7 +47,7 @@ Affiche les évolutions et go exercice 4
 Réactif/two way data-binding
 
 # Exercice 5
-Composant pkmn et liste de ce composant
+Composant pkmn et liste de ce composant + router
 
 # Exercice 6
 http
