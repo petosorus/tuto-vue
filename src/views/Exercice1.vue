@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const playerName = "Thomas le " + new Date().toLocaleDateString()
+const playerName = "Thomas"
 </script>
 
 <template>
