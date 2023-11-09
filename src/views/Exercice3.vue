@@ -1,24 +1,24 @@
 <script setup lang="ts">
 
-const bulbi =         
+const sala =         
 {
-    "pokedexId": 1,
+    "pokedexId": 4,
     "generation": 1,
-    "category": "Pokémon Graine",
+    "category": "Pokémon Lézard",
     "name": {
-        "fr": "Bulbizarre",
-        "en": "Bulbasaur",
-        "jp": "フシギダネ"
+        "fr": "Salamèche",
+        "en": "Charmander",
+        "jp": "ヒトカゲ "
     },
     "sprites": {
-        "regular": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1/regular.png",
-        "shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/1/shiny.png",
+        "regular": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/4/regular.png",
+        "shiny": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/sprites/4/shiny.png",
         "gmax": null
     },
     "types": [
         {
-            "name": "Plante",
-            "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/plante.png"
+            "name": "Feu",
+            "image": "https://raw.githubusercontent.com/Yarkis01/PokeAPI/images/types/feu.png"
         },
         {
             "name": "Poison",
@@ -27,51 +27,51 @@ const bulbi =
     ],
     "talents": [
         {
-            "name": "Engrais",
+            "name": "Brasier",
             "tc": false
         },
         {
-            "name": "Chlorophylle",
+            "name": "Force Soleil",
             "tc": true
         }
     ],
     "stats": {
-        "hp": 45,
-        "atk": 49,
-        "def": 49,
-        "spe_atk": 65,
-        "spe_def": 65,
-        "vit": 45
+        "hp": 39,
+        "atk": 52,
+        "def": 43,
+        "spe_atk": 60,
+        "spe_def": 50,
+        "vit": 65
     },
     "evolution": {
         "pre": null,
         "next": [
             {
-                "pokedexId": 2,
-                "name": "Herbizarre",
+                "pokedexId": 5,
+                "name": "Reptincel",
                 "condition": "Niveau 16"
             },
             {
-                "pokedexId": 3,
-                "name": "Florizarre",
-                "condition": "Niveau 32"
+                "pokedexId": 6,
+                "name": "Dracaufeu",
+                "condition": "Niveau 36"
             }
         ],
         "mega": null
     },
-    "height": "0,7 m",
-    "weight": "6,9 kg"
+    "height": "0,6 m",
+    "weight": "8,5 kg"
 }
 </script>
 
 <template>
   <main>
-    <h1>{{ bulbi.name.fr }}</h1>
+    <h1>{{ sala.name.fr }}</h1>
     <span id="types">
-      <img v-bind:src="bulbi.types[0].image" v-bind:title="bulbi.types[0].name">
+        <img v-for="type in sala.types" :src="type.image" :title="type.name">
     </span>
 
-    <img v-bind:src="bulbi.sprites.regular">
+    <img v-bind:src="sala.sprites.regular">
 
     <span id="evolutions">
       <h3>Evolutions</h3>
