@@ -1,9 +1,9 @@
 <script setup lang="ts">
-
+const playerName = "Thomas le " + new Date().toLocaleDateString()
 </script>
 
 <template>
-  <main>
-    toto
-  </main>
+  <h1>
+    Joueur.se : {{ playerName }}
+  </h1>
 </template>
